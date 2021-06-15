@@ -2,6 +2,7 @@ import React from 'react'
 import Headercomponent from "./commonComponents/Headercomponent"
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import "./Header.css"
 
 function Header() {
     return (

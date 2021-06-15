@@ -1,3 +1,8 @@
 * {
   margin: 0px;
 }
+
+:root {
+  --amazon-darkblue: #131921;
+  --amazon-yellow: #cd9042;
+}

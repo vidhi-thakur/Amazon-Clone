@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--amazon-darkblue);
+    color: white;
+}
+
+.header>img {
+    width: 100px;
+    height: 60px;
+}
+
+.header__searchfield {
+    display: flex;
+    align-items: center;
+}
+
+.header__searchfield>.MuiSvgIcon-root {
+    background-color: var(--amazon-yellow);
+    padding: 0.4rem;
+    border: none;
+    height: 22px!important;
+}
+
+.header__searchfield>input {
+    padding: 0.5rem;
+    outline: none;
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
