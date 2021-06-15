@@ -1,20 +1,29 @@
 .header {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
     background-color: var(--amazon-darkblue);
     color: white;
 }
 
+.mar {
+    margin-right: 1rem;
+}
+
+.ca {
+    align-items: center;
+}
+
 .header>img {
-    width: 100px;
+    width: 80px;
     height: 60px;
+    margin: 0.5rem 1rem 0px 1rem;
+    object-fit: contain;
 }
 
 .header__searchfield {
     display: flex;
-    align-items: center;
+    flex: 1 1;
 }
 
 .header__searchfield>.MuiSvgIcon-root {
@@ -26,8 +35,11 @@
 
 .header__searchfield>input {
     padding: 0.5rem;
-    outline: none;
     display: flex;
     width: 100%;
     flex: 1;
+}
+
+.header__basket {
+    display: flex;
 }

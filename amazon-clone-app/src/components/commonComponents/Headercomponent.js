@@ -5,7 +5,7 @@ function Headercomponent({inputLine1, inputLine2}) {
     return (
         <div className="headerComponent">
             <span>{inputLine1}</span>
-            <span>{inputLine2}</span>
+            <span className="boldtext">{inputLine2}</span>
         </div>
     )
 }

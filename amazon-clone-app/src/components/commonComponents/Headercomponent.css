@@ -1,0 +1,13 @@
+.headerComponent {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+span {
+    font-size: small;
+}
