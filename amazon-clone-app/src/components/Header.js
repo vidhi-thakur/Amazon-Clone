@@ -15,6 +15,7 @@ function Header() {
             </div>
             <Headercomponent inputLine1="Hello," inputLine2="Sign In" />
             <Headercomponent inputLine1="Returns" inputLine2="& Orders" />
+            <Headercomponent inputLine1="Your" inputLine2="Prime" />
             <div className="header__basket mar ca">
                 <ShoppingCartIcon className="mar" />
                 <span>0</span>
