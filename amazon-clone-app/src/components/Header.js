@@ -1,10 +1,14 @@
 import React from 'react'
-import Headercomponent from "./commonComponents/Headercomponent"
+import Headercomponent from "./Headercomponent"
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { useStateValue } from '../StateProvider';
 import "./Header.css"
 
 function Header() {
+
+    const [{basket}, dispatch] = useStateValue();
+
     return (
         <div className="header ca">
             <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" />
@@ -18,7 +22,7 @@ function Header() {
             <Headercomponent inputLine1="Your" inputLine2="Prime" />
             <div className="header__basket mar ca">
                 <ShoppingCartIcon className="mar cp" />
-                <span className="cp">0</span>
+                <span className="cp">{basket?.length}</span>
             </div>
         </div>
     )

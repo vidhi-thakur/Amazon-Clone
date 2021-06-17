@@ -4,6 +4,9 @@
     justify-content: space-around;
     background-color: var(--amazon-darkblue);
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .mar {
