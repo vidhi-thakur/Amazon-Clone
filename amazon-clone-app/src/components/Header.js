@@ -22,7 +22,7 @@ function Header() {
                 <input />
                 <SearchRoundedIcon />
             </div>
-            <Link to="/signin" className="header__link">
+            <Link to="/Signin" className="header__link">
                 <Headercomponent inputLine1="Hello," inputLine2="Sign In" />
             </Link>
             <Link to="/" className="header__link">
