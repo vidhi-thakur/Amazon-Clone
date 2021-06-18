@@ -1,0 +1,23 @@
+.checkoutList {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.checkoutList__image {
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+.checkout__title {
+    font-weight: bold;
+}
+
+.c_mar {
+    margin: 0.4rem 0px;
+}
+
+.btn_size {
+    width: 150px;
+}

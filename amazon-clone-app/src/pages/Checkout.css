@@ -1,4 +1,31 @@
+.bg-white {
+    background-color: white;
+}
+
 .checkout__image {
     width: 100%;
-    height: 150px;
+    height: 170px;
+    object-fit: contain;
+    padding-inline-start: 1.5rem;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.checkout__paragraph {
+    padding: 1.5rem;
+}
+
+.checkout__paragraph>strong {
+    display: block;
+    font-size: xx-large;
+}
+
+.checkout__link {
+    color: blue;
+    text-decoration: none;
+}
+
+.checkout__border {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
 }
