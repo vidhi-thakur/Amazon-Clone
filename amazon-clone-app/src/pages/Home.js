@@ -5,7 +5,7 @@ import Product from '../components/Product'
 function Home() {
     return (
         <div className="home">
-            <img className="home__img" src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"/>
+            <img className="home__img" src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/Sherni/Launch/1500x600_Hero-Tall_JPN._CB666415459_.jpg"/>
             
             <div className="home__productRow">
                 <Product id="0001" title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440" rating={4} image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg" price="80,217" />
