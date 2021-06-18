@@ -4,6 +4,7 @@ import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useStateValue } from '../StateProvider';
 import "./Header.css"
+import {Link} from "react-router-dom"
 
 function Header() {
 
@@ -20,10 +21,12 @@ function Header() {
             <Headercomponent inputLine1="Hello," inputLine2="Sign In" />
             <Headercomponent inputLine1="Returns" inputLine2="& Orders" />
             <Headercomponent inputLine1="Your" inputLine2="Prime" />
-            <div className="header__basket mar ca">
-                <ShoppingCartIcon className="mar cp" />
-                <span className="cp">{basket?.length}</span>
-            </div>
+            <Link to="/checkout/" className="header__link">
+                <div className="header__basket mar ca">
+                    <ShoppingCartIcon className="mar cp" />
+                    <span className="cp">{basket?.length}</span>
+                </div>
+            </Link>
         </div>
     )
 }
