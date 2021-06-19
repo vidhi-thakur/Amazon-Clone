@@ -24,7 +24,7 @@ function Checkout() {
                 }
             </div>
             <div className="checkout__right">
-                <Productsum />
+                {basket.length > 0 && <Productsum />}
             </div>
         </div>
     )
