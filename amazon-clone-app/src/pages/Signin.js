@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Signin.css"
 import { Link, useHistory } from "react-router-dom"
 import { auth } from '../firebase';
@@ -6,24 +6,28 @@ import {useStataValue} from "../StateProvider"
 
 function Signin() {
 
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
     let history = useHistory();
 
     const onClickSignIn = (event) => {
         event.preventDefault();
 
-        auth.signInWithEmailAndPassword(auth).then((user) => {
-            dispatchEvent({
-
-            })
-        })
-        //redirect to login page
-        history.push("/signin");
+        auth.signInWithEmailAndPassword(email, password).then((user) => {
+            //redirect to login page
+            history.push("/");
+        }).catch((error) => alert(error.message))
+        
     }
 
     const onClickRegister = (event) => {
         event.preventDefault();
-        //redirect to login page
-        history.push("/signin");
+
+        auth.createUserWithEmailAndPassword(email, password).then((user) => {
+            //redirect to login page
+            history.push("/");
+        }).catch((error) => alert(error.message))
     }
 
     return (
@@ -35,9 +39,9 @@ function Signin() {
                 <form className="signIn__form">
                     <h1 className="form--heading">Sign In</h1>
                     <h5 className="form--subheading">Email</h5>
-                    <input className="form--input form--btnSize ip--padding" type="email" required />
+                    <input value={email} onChange={(e) => setEmail(e.target.value)} className="form--input form--btnSize ip--padding" type="email" required />
                     <h5 className="form--subheading">Password</h5>
-                    <input className="form--input form--btnSize ip--padding" type="password" required />
+                    <input value={password} onChange={(e) => setPassword(e.target.value)} className="form--input form--btnSize ip--padding" type="password" required />
                     <button onClick={onClickSignIn} className="product__button form--btnSize ip--padding" type="submit">Sign In</button>
                 </form>
                 <small className="signIn__para form--btnSize">By signing-in you agree to Amazon's Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.</small>

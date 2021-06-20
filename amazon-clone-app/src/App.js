@@ -4,13 +4,30 @@ import Home from './pages/Home';
 import Checkout from './pages/Checkout';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Signin from "./pages/Signin"
+import React, { useEffect } from 'react'
+import { auth } from './firebase';
+import { useStateValue } from './StateProvider';
 
 function App() {
 
+  const [{user}, dispatch] = useStateValue();
+
   useEffect(() => {
-    effect
+    const userChange = auth.onAuthStateChanged((user) => {
+      if (user) {
+        dispatch({
+          type: "SET_USER",
+          user: user
+        })
+      } else {
+        dispatch({
+          type: "SET_USER",
+          user: null
+        })
+      }
+    })
     return () => {
-      cleanup
+      userChange();
     }
   }, [])
   
