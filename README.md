@@ -7,6 +7,7 @@ This web app is amazon clone app. The technologies used while building this app 
 1. Firebase google authentication
 1. Firebase hosting
 1. Check out the facebook clone here: (link will be added soon...)
+1. React Dialog npm
 
 PS. Upcoming features:-
 1. Responsiveness in extra pages to be added in future

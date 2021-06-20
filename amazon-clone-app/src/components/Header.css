@@ -9,6 +9,10 @@
     z-index: 100;
 }
 
+.ui-dialog-container {
+    background-color: white;
+}
+
 .mar {
     margin-right: 1rem;
 }
