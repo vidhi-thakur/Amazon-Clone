@@ -6,6 +6,14 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Signin from "./pages/Signin"
 
 function App() {
+
+  useEffect(() => {
+    effect
+    return () => {
+      cleanup
+    }
+  }, [])
+  
   return (
     <div className="app">
       <Router>
@@ -17,7 +25,7 @@ function App() {
         <Route path="/signin">
             <Signin />
           </Route>
-          <Route path="/checkout/">
+          <Route path="/checkout">
             <Header />
             <Checkout />
           </Route>
