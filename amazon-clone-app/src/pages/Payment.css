@@ -1,0 +1,88 @@
+.payment {
+    background-color: white;
+    height: 100vh;
+}
+
+.payment__header {
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.payment__signInButton {
+    background-color: #FFD814;
+    border: 1px solid #FCD200;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    margin: 3rem;
+}
+
+.payment__signInButton:hover {
+    background-color: #f8d10b;
+}
+
+.linkToSignIn--image {
+    width: 200px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.payment__linkToSignIn {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .payment__linkToSignIn {
+        flex-direction: column;
+    }
+}
+
+.payment__userEmail {
+    margin-inline-start: 4.1rem;
+}
+
+.payment__userAddress {
+    margin-inline-start: 3rem;
+}
+
+.payment--flex {
+    display: flex;
+    align-items: center;
+}
+
+.payment__userSignedIn {
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+
+.payment__userInfo--left {
+    width: 40%;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.payment__userCredential {
+    margin-bottom: 2rem;
+}
+
+.payment__amount {
+    justify-content: space-between;
+    padding-inline-end: 3rem;
+    border-top: 1px solid gray;
+    padding-top: 1rem;
+}
+
+.payment__link--right {
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.payment__sideImage {
+    width: 150px;
+}

@@ -8,6 +8,7 @@ import React, { useEffect } from 'react'
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 import Dialogbox from './components/Dialogbox';
+import Payment from './pages/Payment';
 
 function App() {
 
@@ -48,6 +49,11 @@ function App() {
             <Header />
             {dialog && <Dialogbox />}
             <Checkout />
+          </Route>
+          <Route path="/payment">
+            <Header />
+            {dialog && <Dialogbox />}
+          <Payment />
           </Route>
         </Switch>
       </Router>

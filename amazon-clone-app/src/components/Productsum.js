@@ -3,6 +3,7 @@ import "./Productsum.css"
 import { useStateValue } from "../StateProvider"
 import { basketItemSum } from "../reducer"
 import CurrencyFormat from 'react-currency-format';
+import { Link } from 'react-router-dom';
 
 function Productsum() {
     const [{basket}, dispatch] = useStateValue();
@@ -13,14 +14,16 @@ function Productsum() {
                     <div className="productsum__price">
                         <p> Subtotal ({basket.length} items): <strong>{value}</strong> </p>
                         <div className="productsum__input">
-                            <input type="checkbox" value="This order contains a gift" />
+                            <input type="checkbox" />
                             <label>This order contains a gift</label>
                         </div>
                     </div>
                 </>
             )} decimalScale={2} value={basketItemSum(basket)} displayType='text' prefix={'₹'} thousandSeparator={true}  />
             
-            <button className="btn--width product__button">Proceed to Checkout</button>
+            <Link to="/payment">
+                <button className="btn--width product__button">Proceed to Checkout</button>
+            </Link>
         </div>
     )
 }
