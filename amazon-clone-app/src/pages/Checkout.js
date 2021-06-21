@@ -12,10 +12,11 @@ function Checkout() {
             <div className="checkout__left">
                 <img className="checkout__image" src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg" alt="amazon-ad" />
                 {
-                    basket?.length===0 ? (<div className="checkout__paragraph"> <strong>Your Amazon Basket is empty.</strong> 
+                    basket?.length===0 ? (<div className="checkout__paragraph"> <strong>Your Amazon Basket is empty.</strong>
+                    <p>Your shopping cart is waiting. Give it purpose – fill it with groceries, clothing, household supplies, electronics and more. Continue shopping on the</p> 
                     <Link className="checkout__link" to="/">
-                    Shop today’s deals
-                    </Link>
+                    Amazon homepage
+                    </Link><span>.</span>
                     </div>) : (<div className="checkout__paragraph"> <strong className="checkout__border">Your Shopping Basket</strong>
                     {
                     basket.map((item) => (<Checkoutlist id={item.id} title={item.title} price={item.price} rating={item.rating} image={item.image} />))
