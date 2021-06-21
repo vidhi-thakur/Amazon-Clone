@@ -11,6 +11,5 @@ This web app is amazon clone app. The technologies used while building this app 
 
 PS. Upcoming features:-
 1. Responsiveness in extra pages to be added in future
-1. Adding address as an input and displaying it when order is confirmed
 1. Login through user credentials (i.e., adding username in the credentials)
 1. Adding extra page for "proceed to checkout" button
