@@ -12,4 +12,5 @@ This web app is amazon clone app. The technologies used while building this app 
 Check out the facebook clone here: (link to be updated soon...)
 
 PS. Upcoming features:-
+1. responsive on phone
 1. Login through user credentials (i.e., adding username in the credentials)
