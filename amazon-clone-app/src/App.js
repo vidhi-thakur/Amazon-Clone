@@ -7,6 +7,7 @@ import Signin from "./pages/Signin"
 import React, { useEffect } from 'react'
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
+import Dialogbox from './components/Dialogbox';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <Switch>
         <Route exact path="/">
           <Header />
+          <Dialogbox />
           <Home />
           </Route>
         <Route path="/signin">

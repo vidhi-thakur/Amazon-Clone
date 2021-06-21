@@ -6,7 +6,6 @@ import { useStateValue } from '../StateProvider';
 import "./Header.css"
 import {Link} from "react-router-dom"
 import { auth } from '../firebase';
-import Dialog from 'react-dialog'
 
 function Header() {
 

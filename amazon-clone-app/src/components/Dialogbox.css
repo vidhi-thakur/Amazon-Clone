@@ -1,0 +1,61 @@
+.dialogbox {
+    margin: auto;
+    height: 190px;
+    flex-direction: column;
+    width: 375px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+
+.dialogbox__body {
+    padding: 1rem;
+}
+
+.dialog__flex {
+    display: flex;
+}
+
+.dialogbox__header {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0px;
+    background-color: #F0F2F2;
+    border-bottom: 1px solid #D5D9D9;
+}
+
+.dialog__para {
+    font-size: small;
+    color: gray;
+}
+
+.dialogbox__form {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.dialogbox__input {
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid gray;
+    outline: 0;
+    box-shadow: 0 1px 2px rgb(15 17 17 / 15%) inset;
+}
+
+.dialogbox__button {
+    flex-grow: 1;
+    background-color: #F0F2F2;
+    border-style: solid;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 60%) inset;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+}
+
+.dialogbox__button:hover {
+    background-color: #D5D9D9;
+}
