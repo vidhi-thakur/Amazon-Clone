@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Headercomponent from "./Headercomponent"
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -9,16 +9,13 @@ import { auth } from '../firebase';
 
 function Header() {
 
-    const [{user, basket}, dispatch] = useStateValue();
-    const [openDialog, setOpenDialog] = useState(false);
-
-    const handleClose = () => {
-        setOpenDialog(false);
-    }
+    const [{user, basket, address}, dispatch] = useStateValue();
 
     const handleOpen = () => {
-        setOpenDialog(true);
-        console.log(!openDialog)
+        dispatch({
+            type: "SET_DIALOG_OPEN",
+            dialog: true
+        })
     }
 
     const stateChange = () => {
@@ -30,11 +27,9 @@ function Header() {
             <Link to="/" className="header__link">
                 <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" />
             </Link>
-            {/* <Link to="/useraddress" className="header__link"> */}
             <div  onClick={handleOpen} className="header__link">
-                <Headercomponent inputLine1="Deliver to" inputLine2="Enter address" />
+                <Headercomponent inputLine1="Deliver to" inputLine2={address? address: "Enter address"} />
             </div>
-            {/* </Link> */}
             <div className="header__searchfield ca mar">
                 <input />
                 <SearchRoundedIcon />

@@ -11,7 +11,7 @@ import Dialogbox from './components/Dialogbox';
 
 function App() {
 
-  const [{user}, dispatch] = useStateValue();
+  const [{user, dialog}, dispatch] = useStateValue();
 
   useEffect(() => {
     const userChange = auth.onAuthStateChanged((user) => {
@@ -38,7 +38,7 @@ function App() {
         <Switch>
         <Route exact path="/">
           <Header />
-          <Dialogbox />
+          {dialog && <Dialogbox />}
           <Home />
           </Route>
         <Route path="/signin">
@@ -46,6 +46,7 @@ function App() {
           </Route>
           <Route path="/checkout">
             <Header />
+            {dialog && <Dialogbox />}
             <Checkout />
           </Route>
         </Switch>

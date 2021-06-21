@@ -3,12 +3,29 @@ basket?.reduce((amount, item) => item.price+amount, 0);
 
 export const initialState = {
     basket: [],
-    user: null
+    user: null,
+    dialog: false,
+    address: null
 }
 
 const reducer = (state, action) => {
-    console.log(action.user)
+    console.log(action.type)
     switch (action.type) {
+        case "SET_ADDRESS":
+            return {
+                ...state,
+                address: action.address
+            }
+        case "SET_DIALOG_OPEN": 
+            return {
+            ...state,
+            dialog: action.dialog
+        }
+        case "SET_DIALOG_CLOSE": 
+            return {
+            ...state,
+            dialog: action?.dialog
+        }
         case "SET_USER":
             return {
                 ...state,
