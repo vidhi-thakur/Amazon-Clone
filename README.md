@@ -9,5 +9,7 @@ This web app is amazon clone app. The technologies used while building this app 
 1. Check out the facebook clone here: (link will be added soon...)
 1. React Dialog npm
 
+Check out the facebook clone here: (link to be updated soon...)
+
 PS. Upcoming features:-
 1. Login through user credentials (i.e., adding username in the credentials)
