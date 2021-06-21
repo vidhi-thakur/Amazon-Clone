@@ -35,9 +35,12 @@
     max-width: 100%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .payment__linkToSignIn {
         flex-direction: column;
+    }
+    .payment__userInfo--left {
+        width: 85%!important;
     }
 }
 
@@ -61,7 +64,7 @@
 }
 
 .payment__userInfo--left {
-    width: 40%;
+    width: 700px;
     border: 1px solid gray;
     border-radius: 0.5rem;
     padding: 1rem;
