@@ -89,3 +89,10 @@
 .payment__sideImage {
     width: 150px;
 }
+
+@media screen and(max-width: 400px) {
+    .payment__link--right {
+        justify-content: space-evenly;
+        max-width: 90%;
+    }
+}

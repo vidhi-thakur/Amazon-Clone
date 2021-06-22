@@ -21,3 +21,9 @@
 .btn_size {
     width: 150px;
 }
+
+@media screen and (max-width: 400px) {
+    .checkoutList {
+        flex-direction: column;
+    }
+}

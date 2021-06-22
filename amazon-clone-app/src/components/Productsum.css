@@ -33,3 +33,12 @@
 .product__button:hover {
     background-color: #d69900;
 }
+
+@media screen and (max-width: 400px) {
+    .productsum__price {
+        max-width: 90%;
+    }
+    .btn--width {
+        max-width: 200px;
+    }
+}
