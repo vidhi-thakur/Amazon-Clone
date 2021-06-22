@@ -45,6 +45,9 @@
     .small_screen_width {
         width: 90%!important;
     }
+}
+
+@media screen and (max-width: 500px) {
     .bottom--btn {
         flex-direction: column-reverse!important;
     }

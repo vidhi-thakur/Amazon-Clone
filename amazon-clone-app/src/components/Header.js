@@ -37,7 +37,7 @@ function Header() {
                 <SearchRoundedIcon />
             </div>
             <Link to={user ? "/" :"/signin"} onClick={stateChange} className="header__link">
-                <Headercomponent inputLine1={ user ? `Hello, ${name}`: `Hello, guest`} inputLine2={ user ? `Sign Out`: `Sign In`} />
+                <Headercomponent inputLine1={ user ? (name? `Hello, ${name}`: `Hello`): `Hello, guest`} inputLine2={ user ? `Sign Out`: `Sign In`} />
             </Link>
             <Link to="/" className="header__link noDisplay">
                 <Headercomponent inputLine1="Returns" inputLine2="& Orders" />

@@ -66,7 +66,9 @@ function Payment() {
                     <Link to="/">
                         <button className="payment__signInButton payment__btn">Continue shopping</button>
                     </Link>
+                    <div>
                     <button onClick={clicked} className="payment__signInButton payment__btn">{!toggle?"Pay Now": "Processing"}</button>
+                    </div>
                 </div>
                 </div>
             </div>
