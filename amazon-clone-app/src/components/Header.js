@@ -37,10 +37,10 @@ function Header() {
             <Link to={user ? "/" :"/Signin"} onClick={stateChange} className="header__link">
                 <Headercomponent inputLine1={ user ? `Hello, ${user.email}`: `Hello, guest`} inputLine2={ user ? `Sign Out`: `Sign In`} />
             </Link>
-            <Link to="/" className="header__link">
+            <Link to="/" className="header__link noDisplay">
                 <Headercomponent inputLine1="Returns" inputLine2="& Orders" />
             </Link>
-            <Link to="/" className="header__link">
+            <Link to="/" className="header__link  noDisplay">
                 <Headercomponent inputLine1="Your" inputLine2="Prime" />
             </Link>
             <Link to="/checkout/" className="header__link">
