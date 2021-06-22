@@ -6,11 +6,7 @@ This web app is amazon clone app. The technologies used while building this app 
 1. React context API
 1. Firebase google authentication
 1. Firebase hosting
-1. Check out the facebook clone here: (link will be added soon...)
-1. React Dialog npm
 
 Check out the facebook clone here: https://clone-ec622.web.app
 
-PS. Upcoming features:-
-1. responsive on phone
-1. Login through user credentials (i.e., adding username in the credentials)
+PS. If you like the repo., do give it a star.
