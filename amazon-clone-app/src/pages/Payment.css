@@ -1,6 +1,6 @@
 .payment {
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .payment__header {
@@ -39,9 +39,9 @@
     .payment__linkToSignIn {
         flex-direction: column;
     }
-    .payment__userInfo--left {
+    /* .payment__userInfo--left {
         width: 85%!important;
-    }
+    } */
 }
 
 .payment__userEmail {
