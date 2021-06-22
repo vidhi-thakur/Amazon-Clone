@@ -9,9 +9,11 @@ import { auth } from '../firebase';
 
 function Header() {
 
-    const [{user, basket, address}, dispatch] = useStateValue();
+    const [{user, basket, address, name}, dispatch] = useStateValue();
 
     const handleOpen = () => {
+        console.log("USER NAME>>>>",name)
+        console.log("ADDRESS>>>>>>",address)
         dispatch({
             type: "SET_DIALOG_OPEN",
             dialog: true
@@ -34,8 +36,8 @@ function Header() {
                 <input />
                 <SearchRoundedIcon />
             </div>
-            <Link to={user ? "/" :"/Signin"} onClick={stateChange} className="header__link">
-                <Headercomponent inputLine1={ user ? `Hello, ${user.email}`: `Hello, guest`} inputLine2={ user ? `Sign Out`: `Sign In`} />
+            <Link to={user ? "/" :"/signin"} onClick={stateChange} className="header__link">
+                <Headercomponent inputLine1={ user ? `Hello, ${name}`: `Hello, guest`} inputLine2={ user ? `Sign Out`: `Sign In`} />
             </Link>
             <Link to="/" className="header__link noDisplay">
                 <Headercomponent inputLine1="Returns" inputLine2="& Orders" />

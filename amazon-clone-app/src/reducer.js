@@ -5,12 +5,18 @@ export const initialState = {
     basket: [],
     user: null,
     dialog: false,
-    address: null
+    address: null,
+    name: null
 }
 
 const reducer = (state, action) => {
     console.log(action.type)
     switch (action.type) {
+        case "SET_NAME":
+            return {
+                ...state,
+                name: action.name
+            }
         case "SET_ADDRESS":
             return {
                 ...state,

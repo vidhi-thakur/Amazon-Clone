@@ -2,12 +2,15 @@ import React, { useState } from 'react'
 import "./Signin.css"
 import { Link, useHistory } from "react-router-dom"
 import { auth } from '../firebase';
-import {useStataValue} from "../StateProvider"
+import {useStataValue, useStateValue} from "../StateProvider"
 
 function Signin() {
 
+    const [ , dispatch] = useStateValue();
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [name, setName] = useState("");
 
     let history = useHistory();
 
@@ -18,7 +21,13 @@ function Signin() {
             //redirect to login page
             history.push("/");
         }).catch((error) => alert(error.message))
-        
+
+        dispatch({
+            type: "SET_NAME",
+            name: name
+          })
+
+          console.log(name)
     }
 
     const onClickRegister = (event) => {
@@ -38,6 +47,8 @@ function Signin() {
             <div className="signIn__container">
                 <form className="signIn__form">
                     <h1 className="form--heading">Sign In</h1>
+                    <h5 className="form--subheading">User Name</h5>
+                    <input value={name} onChange={(e) => setName(e.target.value)} className="form--input form--btnSize ip--padding" type="text" required />
                     <h5 className="form--subheading">Email</h5>
                     <input value={email} onChange={(e) => setEmail(e.target.value)} className="form--input form--btnSize ip--padding" type="email" required />
                     <h5 className="form--subheading">Password</h5>

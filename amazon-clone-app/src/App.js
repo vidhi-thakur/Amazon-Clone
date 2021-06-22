@@ -12,10 +12,10 @@ import Payment from './pages/Payment';
 
 function App() {
 
-  const [{user, dialog}, dispatch] = useStateValue();
+  const [{user, name, dialog}, dispatch] = useStateValue();
 
   useEffect(() => {
-    const userChange = auth.onAuthStateChanged((user) => {
+    const userChange = auth.onAuthStateChanged((user, name) => {
       if (user) {
         dispatch({
           type: "SET_USER",
@@ -28,6 +28,7 @@ function App() {
         })
       }
     })
+    
     return () => {
       userChange();
     }

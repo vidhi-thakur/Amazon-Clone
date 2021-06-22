@@ -48,6 +48,10 @@
     margin-inline-start: 4.1rem;
 }
 
+.payment__userName {
+    margin-inline-start: 5.6rem;
+}
+
 .payment__userAddress {
     margin-inline-start: 3rem;
 }

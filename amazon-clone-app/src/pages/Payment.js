@@ -11,7 +11,7 @@ function Payment() {
 
     const clicked = () => setToggle(true)
 
-    const [{user, basket, address}, dispatch] = useStateValue();
+    const [{user, basket, address, name}, dispatch] = useStateValue();
 
     const enterAddress = (e) => {
         e.preventDefault();
@@ -32,6 +32,10 @@ function Payment() {
                 <Link to="/Signin"><button className="payment__signInButton">Sign in to proceed</button></Link>
             </div>: <div className="payment__userSignedIn payment--flex">
             <div className="payment__userInfo--left">
+                <div className="payment__userCredential payment--flex">
+                    <span>Deliver to</span>
+                    <h3 className="payment__userName">{name}</h3>
+                </div>
                 <div className="payment__userCredential payment--flex">
                     <span>Delivery Email</span>
                     <h3 className="payment__userEmail">{user.email}</h3>
