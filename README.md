@@ -1,5 +1,14 @@
 # Amazone-Clone
-This web app is amazon clone app. The technologies used while building this app are as follows: -
+An Amazon clone application where one can add and remove products to the basket, view order summary with Sign In and Sign Out functionality. 
+
+##Current Features: -
+1. Add to basket
+2. Remove to basket
+3. Product listing
+4. Input address
+5. Calculated total amount
+
+##The technologies used while building this app are as follows: -
 1. ReactJS + React hooks
 1. Material UI
 1. Firebase's firestore database
@@ -9,4 +18,4 @@ This web app is amazon clone app. The technologies used while building this app 
 
 Check out the facebook clone here: https://clone-ec622.web.app
 
-PS. If you like the repo., do give it a star.
+PS. If you like the repo, do give it a star⭐
