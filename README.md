@@ -16,6 +16,6 @@ An Amazon clone application where one can add and remove products to the basket,
 1. Firebase google authentication
 1. Firebase hosting
 
-# Check out the facebook clone here: https://clone-ec622.web.app
+# Check out the Amazon clone here: https://clone-ec622.web.app
 
 PS. If you like the repo, do give it a star⭐
